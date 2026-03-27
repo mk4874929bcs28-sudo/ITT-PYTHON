@@ -1,0 +1,82 @@
+[24bcs014@mepcolinux car]$cat car.py
+T = int(input("Enter No.of test cases:"))
+for _  in range(T):
+   N = int(input("Enter no of Tyres:"))
+   if (N % 4 > 1):
+      print("YES")
+   else:
+      print("NO")
+
+[24bcs014@mepcolinux car]$cat chess.py
+T=int(input("Enter no of test cases:"))
+for i in range(1,T+1):
+	X=int(input("Enter prize pool:"))
+	result=list(input("Enter match result:"))
+	c_points=0
+	n_points=0
+	for i in result:
+		if (i=='C'):
+			c_points+=2
+		elif(i=='N'):
+			n_points+=2
+		else:
+			c_points+=1
+			n_points+=1
+	if(c_points>n_points):
+		print(60*X)
+	elif(c_points==n_points):
+		print(55*X)
+	else:
+		print(40*X)
+
+[24bcs014@mepcolinux car]$cat coin.py
+T = int(input("Enter No.of Test Cases:"))
+while T > 0:
+    A, B, C, D = map(int, input().split())
+    
+    if B > A:
+        A = A + C
+    else:
+        B = B + C
+        
+    if B > A:
+        A = A + D
+    else:
+        B = B + D
+        
+    if A >= B:
+        print("N")
+    else:
+        print("S")
+        
+    T = T - 1
+
+[24bcs014@mepcolinux car]$cat triangle.py
+T = int(input("Enter T Value:"))
+T_count = 0
+while T_count < T:
+	N = int(input("Enter N:"))
+	triangle = []
+	i = 0
+	while i < N:
+		row = list(map(int, input().split()))
+		triangle.append(row)
+		i = i + 1
+	row_idx = N - 2
+	while row_idx >= 0:
+		col_idx = 0
+		while col_idx <= row_idx:
+			left = triangle[row_idx + 1][col_idx]
+			right = triangle[row_idx + 1][col_idx + 1]
+			if left > right:
+				triangle[row_idx][col_idx] = triangle[row_idx][col_idx] + left
+			else:
+				triangle[row_idx][col_idx] = triangle[row_idx][col_idx] + right
+            
+			col_idx = col_idx + 1
+		row_idx = row_idx - 1
+	if N > 0:
+		print(triangle[0][0])
+        
+	T_count = T_count + 1
+
