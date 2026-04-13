@@ -1,0 +1,7 @@
+n=int(input("Enter a number:"))
+m=n//2
+m1=m*2
+if (m1==n):
+   print("Even number!")
+else:
+   print("Odd number!")
