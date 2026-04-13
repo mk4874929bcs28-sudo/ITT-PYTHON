@@ -1,0 +1,20 @@
+T = int(input("Enter No.of Test Cases:"))
+while T > 0:
+    A, B, C, D = map(int, input().split())
+
+    if B > A:
+        A = A + C
+    else:
+        B = B + C
+
+    if B > A:
+        A = A + D
+    else:
+        B = B + D
+
+    if A >= B:
+        print("N")
+    else:
+        print("S")
+
+    T = T - 1
