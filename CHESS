@@ -1,0 +1,20 @@
+T=int(input("Enter no of test cases:"))
+for i in range(1,T+1):
+        X=int(input("Enter prize pool:"))
+        result=list(input("Enter match result:"))
+        c_points=0
+        n_points=0
+        for i in result:
+                if (i=='C'):
+                        c_points+=2
+                elif(i=='N'):
+                        n_points+=2
+                else:
+                        c_points+=1
+                        n_points+=1
+        if(c_points>n_points):
+                print(60*X)
+        elif(c_points==n_points):
+                print(55*X)
+        else:
+                print(40*X)
