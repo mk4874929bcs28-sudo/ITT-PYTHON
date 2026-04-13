@@ -1,0 +1,12 @@
+balance=int(input("Enter balance :"))
+wd=int(input("Enter withdraw amount:"))
+if wd<=0:
+   print("Invalid Amount!")
+elif (wd<=balance and wd%100==0):
+      print("Withdraw Successfully!")
+      balance=balance-wd
+      print("Remaining balance:",balance)
+elif(wd>balance):
+      print("Insufficient Funds!")
+else:
+      print("Amount must be multiple of 100!")
