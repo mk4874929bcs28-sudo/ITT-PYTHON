@@ -1,0 +1,11 @@
+T = int(input("Enter No.of test cases:"))
+for _  in range(T):
+        N = int(input("Enter no.of eggs:"))
+        if (N % 2 == 0):
+                cakes=N//6
+                remaining_eggs=N%6
+                pasteries=remaining_eggs/2
+                if(pasteries>=2):
+                        print("YES")
+                else:
+                        print("NO")
