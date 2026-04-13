@@ -1,0 +1,7 @@
+c=int(input())
+if(-50<=c<=100):
+   f=(c*9/5)+32;
+   print("%.1f"%float(f))
+else:
+   print("Out of Range!")
+
