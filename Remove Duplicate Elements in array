@@ -1,0 +1,11 @@
+nums = [3, 2, 2, 3]
+val = 3
+print(f"Actual array:{nums}")
+for i in range(len(nums) - 1, -1, -1):
+    if nums[i] == val:
+        nums.pop(i)
+        nums.append('_')
+
+k = len(nums) - nums.count('_')
+
+print(f"Output: {k}, nums = {nums}")
