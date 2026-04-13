@@ -1,0 +1,7 @@
+s=int(input())
+if(5000<=s<=50000):
+   hra=(0.2*s)
+   da=(0.1*s)
+   print("Salary:",(hra+da+s))
+else:
+   print("Invalid!")
