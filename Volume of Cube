@@ -1,0 +1,6 @@
+s=int(input())
+if(1<=s<=50):
+   v=s*s*s
+   print("Volume of the cube:",v)
+else:
+   print("Invalid!")
