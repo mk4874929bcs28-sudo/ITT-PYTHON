@@ -1,0 +1,6 @@
+a=int(input())
+b=int(input())
+if(0<=a and b<=1000):
+   print("%i"%(a+b))
+else:
+   print("Out of range!")
