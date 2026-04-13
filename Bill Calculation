@@ -1,0 +1,9 @@
+purchase=int(input("Enter amount:"))
+if (purchase >= 5000):
+    purchase = purchase-0.2
+    print("With 20% Your Final Bill:",purchase)
+elif (purchase >= 3000 and purchase<5000):
+    purchase = purchase-0.1
+    print("With 10% Your Final Bill:",purchase)
+else:
+   print("Final bill amount:" , purchase)
