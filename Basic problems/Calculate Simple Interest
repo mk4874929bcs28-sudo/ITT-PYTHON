@@ -1,0 +1,8 @@
+p=int(input("Enter Principal amount:"))
+r=int(input("Enter interest rate:"))
+t=int(input("Enter time period:"))
+if(1<=p<=100000 and 1<=r<=20 and 1<=t<=10):
+   si=(p*r*t)/100
+   print("Simple Interest:",si)
+else:
+   print("Out of Range!")
