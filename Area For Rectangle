@@ -1,0 +1,6 @@
+l=int(input())
+b=int(input())
+if(1<=l and b<=100):
+   print("%i"%(l*b))
+else:
+   print("Out of range!")
