@@ -1,0 +1,6 @@
+c=str(input("Enter character:"))
+vowel='aeiouAEIOU'
+if c in vowel:
+   print("Vowel!")
+else:
+   print("Consonant!")
