@@ -1,0 +1,8 @@
+try:
+    numbers = list(map(int, input().split()))
+    index = int(input())
+    print(numbers[index])
+except IndexError:
+    print("Error: Index out of range")
+except ValueError:
+    print("Error: Invalid input")
