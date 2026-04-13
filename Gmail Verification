@@ -1,0 +1,14 @@
+def is_valid_gmail(email):
+    if not email.endswith('@gmail.com'):
+        return False
+    username = email[:-10]
+    if len(username) == 0:
+        return False
+    allowed_chars = set("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
+    for char in username:
+        if char not in allowed_chars:
+            return False
+
+    return True
+mail=input("Enter mail ID:")
+print(is_valid_gmail(mail))
