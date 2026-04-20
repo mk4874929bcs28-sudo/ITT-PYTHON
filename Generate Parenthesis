@@ -12,7 +12,7 @@ class Solution:
                                 backtrack(openn + 1, close)
                                 sol.pop()
                         if openn > close:
-                                ol.append(")")
+                                sol.append(")")
                                 backtrack(openn, close + 1)
                                 sol.pop()
                 backtrack(0, 0)
